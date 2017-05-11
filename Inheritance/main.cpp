@@ -6,12 +6,17 @@
 
 using namespace std;
 
-class ManyParents : public PublicChild, protected ProtectedChild, private PrivateChild
+namespace MyNamespace
 {
-public:
-	ManyParents() {};
-	~ManyParents() {};
-};
+	class ManyParents : public PublicChild, protected ProtectedChild, private PrivateChild
+	{
+	public:
+		ManyParents() {};
+		~ManyParents() {};
+	};
+}
+using namespace MyNamespace;
+
 
 int main()
 {
