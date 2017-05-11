@@ -148,9 +148,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parent.cpp" />
+    <ClCompile Include="PublicChild.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Parent.h" />
+    <ClInclude Include="PublicChild.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

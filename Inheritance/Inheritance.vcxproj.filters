@@ -21,9 +21,15 @@
     <ClCompile Include="Parent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PublicChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Parent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicChild.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
