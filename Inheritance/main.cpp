@@ -6,6 +6,13 @@
 
 using namespace std;
 
+class ManyParents : public PublicChild, protected ProtectedChild, private PrivateChild
+{
+public:
+	ManyParents() {};
+	~ManyParents() {};
+};
+
 int main()
 {
 	Parent parent(0,0,0);
@@ -19,6 +26,10 @@ int main()
 	//protChild.publicVariable; inaccessible (protected)
 	PrivateChild privChild;
 	//privChild.publicVariable;
+
+	ManyParents mp;
+	mp.PublicChild::publicVariable;
+
 	_getch();
 	return 0;
 }
