@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include "PublicChild.h"
+#include "ProtectedChild.h"
 
 using namespace std;
 
@@ -12,6 +13,9 @@ int main()
 	PublicChild pubChild;
 	pubChild.publicVariable;
 	//pubChild.protectedVariable; inaccessible
+	cout << pubChild.getPrivateVariable()<<endl;
+	ProtectedChild protChild;
+	//protChild.publicVariable; inaccessible
 	_getch();
 	return 0;
 }
