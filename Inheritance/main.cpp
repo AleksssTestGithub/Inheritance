@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <conio.h>
 #include "PublicChild.h"
 #include "ProtectedChild.h"
@@ -25,10 +25,11 @@ int main()
 	ProtectedChild protChild;
 	//protChild.publicVariable; inaccessible (protected)
 	PrivateChild privChild;
-	//privChild.publicVariable;
+	//privChild.publicVariable; inaccessible (private)
 
 	ManyParents mp;
 	mp.PublicChild::publicVariable;
+	mp.Parent::publicVariable;
 
 	_getch();
 	return 0;

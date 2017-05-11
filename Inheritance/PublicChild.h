@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Parent.h"
 class PublicChild :
 	public Parent
