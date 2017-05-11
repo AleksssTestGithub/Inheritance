@@ -27,6 +27,9 @@
     <ClCompile Include="ProtectedChild.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PrivateChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Parent.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProtectedChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivateChild.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
